@@ -1,0 +1,35 @@
+/* Cover */
+.cover { display: block; background-color: #09a0f6; }
+.cover { padding-top: 130px; padding-bottom: 190px; color: #ffffff; }
+
+/* Cover title */
+.cover .cover-title { display: block; font-family: 'Pacifico'; font-size: 100px; }
+.cover .cover-title { margin-bottom: 20px; }
+
+/* Cover description */
+.cover .cover-description { display: block; font-size: 30px; margin-bottom: 10px; }
+
+/* Cover bnts */
+.cover .cover-btn { width: 150px; border-color: #ffffff; color: #ffffff; }
+.cover .cover-btn:hover { color: #09a0f6; background-color: #ffffff; }
+
+
+/* Main */
+.main { margin-top: 50px; margin-bottom: 0px; }
+
+
+/* Docs Head */
+.docs-head { display: block; width: 100%; padding-top: 15px; padding-bottom: 20px; }
+.docs-head { font-family: Pacifico; font-size: 50px; color: #ffffff; background-color: #09a0f6; }
+
+/* Head link */
+.docs-head a { color: #ffffff; text-decoration: none; font-weight: normal; }
+
+/* Docs grid */
+.docs-row { margin-bottom: 20px; } 
+.docs-col { background-color: #eaf0f2; border-radius: 5px; }
+
+
+/* Foot */
+.foot { display: block; text-align: center; width: 100%; padding-bottom: 50px; }
+.foot { padding-top: 50px; }
