@@ -26,8 +26,11 @@
 .docs-head a { color: #ffffff; text-decoration: none; font-weight: normal; }
 
 /* Docs grid */
-.docs-row { margin-bottom: 20px; } 
+.docs-row { margin-bottom: 20px; }
 .docs-col { background-color: #eaf0f2; border-radius: 5px; }
+
+/* Docs space */
+.docs-space { display: block; height: 60px; }
 
 
 /* Foot */
