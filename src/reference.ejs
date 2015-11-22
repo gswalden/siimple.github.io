@@ -1,0 +1,37 @@
+<% include layouts/head %>
+
+<!-- Title -->
+<title>Reference · Siimple</title>
+
+<!-- Head -->
+<div class="docs-head" align="center"><a href="./">Siimple</a></div>
+
+<!-- Grid main -->
+<div class="grid main">
+
+  <!-- Reference title -->
+  <h1>Reference for v<%= latest %></h1>
+
+  <!-- Description -->
+  <p>The reference docs tell you about the components included on the latest version of <b>Siimple</b>,
+  and how to use them. For check how to download and install <b>Siimple</b>, read the 
+  <a href="./getting-started">getting started</a> guide.</p>
+
+  <% include ref/typography %>
+  <div class="docs-space"></div>
+  <% include ref/buttons %>
+  <div class="docs-space"></div>
+  <% include ref/forms %>
+  <div class="docs-space"></div>
+  <% include ref/alerts %>
+  <div class="docs-space"></div>
+  <% include ref/panels %>
+  <div class="docs-space"></div>
+  <% include ref/tables %>
+  <div class="docs-space"></div>
+  <% include ref/grid %>
+
+  <!-- Close the grid main -->
+  </div>
+
+<% include layouts/foot %>
