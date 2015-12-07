@@ -1,3 +1,12 @@
+/* Navbar */
+.navbar { display: block; width: 100%; min-height: 50px; background-color: #01579B; }
+.navbar { color: #ffffff; line-height: 50px; }
+
+/* Navbar links */
+.navbar-link { color: #ffffff; text-decoration: none; font-weight: 300; margin-right: 20px; }
+.navbar-link { float: right; opacity: 0.8; }
+.navbar-link:hover { opacity: 1.0; }
+
 /* Cover */
 .cover { display: block; background-color: #09a0f6; }
 .cover { padding-top: 130px; padding-bottom: 190px; color: #ffffff; }
@@ -20,10 +29,12 @@
 
 /* Docs Head */
 .docs-head { display: block; width: 100%; padding-top: 15px; padding-bottom: 20px; }
-.docs-head { font-family: Pacifico; font-size: 50px; color: #ffffff; background-color: #09a0f6; }
+.docs-head { font-size: 50px; color: #ffffff; background-color: #09a0f6; }
 
 /* Head link */
-.docs-head a { color: #ffffff; text-decoration: none; font-weight: normal; }
+.docs-head a { color: #ffffff; text-decoration: none; font-weight: normal; font-size: 50px; }
+.docs-head a { font-family: Pacifico; }
+.docs-head a:after { content: " \a0\b7\a0 "; font-family: OpenSans; }
 
 /* Docs grid */
 .docs-row { margin-bottom: 20px; }
@@ -35,4 +46,4 @@
 
 /* Foot */
 .foot { display: block; text-align: center; width: 100%; padding-bottom: 50px; }
-.foot { padding-top: 50px; }
+.foot { padding-top: 50px; background-color: #FAFAFA; margin-top: 100px; }
