@@ -1,53 +1,34 @@
 <!-- Buttons -->
 <h3>BUTTONS</h3>
 
-<p>Add a <code>.btn</code> class to transform your <code>div</code>, <code>a</code>, etc... into a button.
-The default color for the button is <code>blue</code>, but you can add a <code>.btn-[color]</code>
-class for modifying the color, where <b>color</b> can be by default <code>green</code>,
-<code>orange</code>, <code>purple</code> or <code>red</code>.</p>
+<p>Add a <code>.btn</code> class to transform your <code>div</code>, <code>a</code> or <code>button</code> element
+into a normal button, or add the <code>.btn-outlie</code> class to transform your element to an outline button.
+You can change the button size by adding a <code>.btn-small</code> or <code>.btn-big</code> class.</p>
 
 <!-- Normal buttons demo -->
-<div class="box">
-  <div class="btn">Default button</div>
-  <div class="btn btn-green">Green button</div>
-  <div class="btn btn-orange">Orange button</div>
-  <div class="btn btn-red">Red button</div>
-  <div class="btn btn-purple">Purple button</div>
-</div>
-
-<!-- Normal buttons code -->
-<pre>
-&lt;div class="btn"&gt;Default button&lt;/div&gt;
-&lt;div class="btn btn-green"&gt;Green&lt;/div&gt;
-&lt;div class="btn btn-orange"&gt;Orange&lt;/div&gt;
-&lt;div class="btn btn-red"&gt;Red&lt;/div&gt;
-&lt;div class="btn btn-purple"&gt;Purple&lt;/div&gt;
-</pre>
-
-<!-- Size buttons -->
-<p>You can change the button size adding a <code>.btn-small</code> or <code>.btn-big</code> class
-to the button.</p>
-
-<!-- Size buttons demo -->
-<div class="box">
+<div align="center">
   <div class="btn btn-small">Small button</div>
+  <div href="" class="btn">Default button</div>
   <div class="btn btn-big">Big button</div>
 </div>
 
-<!-- Size buttons code -->
-<pre>
-&lt;div class="btn btn-small"&gt;Small button&lt;/div&gt;
-&lt;div class="btn btn-big"&gt;Big button&lt;/div&gt;
-</pre>
-
-
-<p><b>Siimple</b> also comes with outline buttons. You can create an outline button by addind the
-<code>.btn-outline</code> class to your element.</p>
-
 <!-- Outline buttons demo -->
-<div class="box">
-  <div class="btn-outline">Outline button</div>
+<div align="center">
+  <div class="btn-outline btn-small">Small button</div>
+  <div class="btn-outline">Default button</div>
+  <div class="btn-outline btn-big">Big button</div>
 </div>
 
-<!-- Outline buttons code -->
-<pre>&lt;div class="btn-outline"&gt;Outline button&lt;/div&gt;</pre>
+
+<!-- Color buttons -->
+<p>You can change the button color by adding a new class to your button with the next style:</p>
+
+<!-- Color buttons code -->
+<pre>
+&lt;!-- For change the color to a normal button --&gt;
+.btn-color { background-color: [color]; }
+
+&lt;!-- For change the color to an outline button --&gt;
+.btn-outline-color { border-color: [color]; color: [color]; }
+.btn-outline-color:hover { background-color: [color]; color: #ffffff; }
+</pre>
