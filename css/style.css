@@ -32,18 +32,20 @@
 .docs-head { font-size: 50px; color: #ffffff; background-color: #09a0f6; }
 
 /* Head link */
-.docs-head a { color: #ffffff; text-decoration: none; font-weight: normal; font-size: 50px; }
-.docs-head a { font-family: Pacifico; }
+.docs-head a { color: #ffffff; text-decoration: none; font-weight: normal; font-size: 50px; font-family: Pacifico; }
 .docs-head a:after { content: " \a0\b7\a0 "; font-family: OpenSans; }
+.docs-head a:hover { text-decoration: none; }
 
 /* Docs grid */
 .docs-row { margin-bottom: 20px; }
 .docs-col { background-color: #eaf0f2; border-radius: 5px; }
 
 /* Docs space */
-.docs-space { display: block; height: 60px; }
+.docs-space { display: block; height: 40px; }
 
+/* GitHub buttons div */
+.gh-btns { display: block; width: 100%; padding-top: 50px; padding-bottom: 30px; }
 
 /* Foot */
 .foot { display: block; text-align: center; width: 100%; padding-bottom: 50px; }
-.foot { padding-top: 50px; background-color: #FAFAFA; margin-top: 100px; }
+.foot { padding-top: 50px; background-color: #f1f5fa; margin-top: 20px; }
