@@ -5,7 +5,7 @@
 /* Navbar links */
 .navbar-link { color: #ffffff; text-decoration: none; font-weight: 300; margin-right: 20px; }
 .navbar-link { float: right; opacity: 0.8; }
-.navbar-link:hover { opacity: 1.0; }
+.navbar-link:hover { opacity: 1.0; color: #ffffff; text-decoration: none; }
 
 /* Cover */
 .cover { display: block; background-color: #09a0f6; }
@@ -24,7 +24,7 @@
 
 
 /* Main */
-.main { margin-top: 50px; margin-bottom: 0px; }
+.main { margin-top: 30px; margin-bottom: 0px; }
 
 
 /* Docs Head */
@@ -34,7 +34,7 @@
 /* Head link */
 .docs-head a { color: #ffffff; text-decoration: none; font-weight: normal; font-size: 50px; font-family: Pacifico; }
 .docs-head a:after { content: " \a0\b7\a0 "; font-family: OpenSans; }
-.docs-head a:hover { text-decoration: none; }
+.docs-head a:hover { text-decoration: none; color: #ffffff; opacity: 0.8; }
 
 /* Docs grid */
 .docs-row { margin-bottom: 20px; }
