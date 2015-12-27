@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<!-- Include Siimple -->
-	<link rel="stylesheet" type="text/css" href="v/1.2.0/siimple.min.css">
+	<link rel="stylesheet" type="text/css" href="v/1.2.1/siimple.min.css">
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="img/favicon.ico">
@@ -47,34 +47,30 @@
 <div class="grid main">
 
   <!-- Reference title -->
-  <h1>Reference for v1.2.0</h1>
+  <h1>Reference for v1.2.1</h1>
 
   <!-- Description -->
-  <p>The reference docs tell you about the components included on the latest version of <b>Siimple</b>,
+  <p>The reference doc tells you about the components included on the latest version of <b>Siimple</b>,
   and how to use them. For check how to download and install <b>Siimple</b>, read the
   <a href="./getting-started">getting started</a> guide.</p>
 
-  <div class="docs-space"></div>
+  <p>Siimple provides a small, light, responsive and clean framework, build in ~250 lines of code. Also,
+  the framwework comes with a ~6KB minimized version.</p>
+
   <!-- Typography -->
 <h3>TYPOGRAPHY</h3>
 
 <p><b>Siimple</b> uses <a href="https://www.google.com/fonts/specimen/Open+Sans" target="_blank">Open Sans</a>
-as the default font. The default <code>font-size</code> is <b>16</b>, and the default <code>font-weight</code> is <b>300</b>.
+as the default font. The default font-size is 16, and the default font-weight is 300.
 <b>Siimple</b> comes with <b>bold tag</b>, <i>italic</i>, <u>underline</u>, <a>liks</a> and <small>small text</small>.
-The default text color is <code>#353f4a</code>, and the emphasis color is <code>#09a0f6</code>.
+The default text color is <b>#353f4a</b>, and the emphasis color is <b>#09a0f6</b>.
 </p>
-
-<!-- Headings -->
-<h4>Headings</h4>
-
-<p>Heading comes with a default <code>margin-bottom</code> of <b>10px</b>, and each tag has his own <code>line-height</code>.
-Headings also uses a <b>300</b> <code>font-weight</code>, instead of <b>bold</b>.</p>
 
 <!-- Grid for the heading example -->
 <div class="row">
 
   <!-- Colum with the demo -->
-  <div class="col-5">
+  <div class="col-6">
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -84,38 +80,31 @@ Headings also uses a <b>300</b> <code>font-weight</code>, instead of <b>bold</b>
   </div>
 
   <!-- Columns with the code -->
-  <div class="col-5">
+  <div class="col-6">
+
+    <!-- Headings description -->
+    <p>Heading comes with a default margin-bottom of 10px, and each tag has his own line-height. Headings
+    also uses a 300 font-weight, instead of bold.</p>
+    <p>The <code>H6</code> heading uses the <b>#798ba0</b> color.</p>
+
+    <!-- Headings code -->
     <pre>&lt;h1&gt;Heading 1&lt;/h1&gt;<br>&lt;h2&gt;Heading 2&lt;/h2&gt;<br>&lt;h3&gt;Heading 3&lt;/h3&gt;<br>&lt;h4&gt;Heading 4&lt;/h4&gt;<br>&lt;h5&gt;Heading 5&lt;/h5&gt;<br>&lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
   </div>
 
 </div>
-
-<!-- Code -->
-<h4>Code</h4>
-
-<p>Use the <code>&lt;code&gt;</code> tag to show an inline code, or use the <code>&lt;pre&gt;</code>
-tag if you want to show one or more lines of code. Both tags uses <b>Open Sans</b> font for the code.</p>
-
-<!-- Code demo -->
-<div class="box">
-  For underline text, you can use the <code>&lt;u&gt;</code> tag!
-</div>
-
-<!-- Code code -->
-<pre>For underline text, you can use the &lt;code&gt;&amp;lt;u&amp;gt;&lt;/code&gt; tag!</pre>
 
   <div class="docs-space"></div>
   <!-- Buttons -->
 <h3>BUTTONS</h3>
 
 <p>Add a <code>.btn</code> class to transform your <code>div</code>, <code>a</code> or <code>button</code> element
-into a normal button, or add the <code>.btn-outlie</code> class to transform your element to an outline button.
+into a normal button, or add the <code>.btn-outline</code> class to transform your element to an outline button.
 You can change the button size by adding a <code>.btn-small</code> or <code>.btn-big</code> class.</p>
 
 <!-- Normal buttons demo -->
 <div align="center">
   <div class="btn btn-small">Small button</div>
-  <div href="" class="btn">Default button</div>
+  <div class="btn">Default button</div>
   <div class="btn btn-big">Big button</div>
 </div>
 
@@ -126,16 +115,29 @@ You can change the button size by adding a <code>.btn-small</code> or <code>.btn
   <div class="btn-outline btn-big">Big button</div>
 </div>
 
+<!-- Buttons code -->
+<pre>
+&lt;!-- Normal buttons --&gt;
+&lt;div class="btn btn-small"&gt;Small button&lt;/div&gt;
+&lt;div class="btn"&gt;Default button&lt;/div&gt;
+&lt;div class="btn btn-big"&gt;Big button&lt;/div&gt;
+
+&lt;!-- Outline buttons --&gt;
+&lt;div class="btn-outline btn-small"&gt;Small button&lt;/div&gt;
+&lt;div class="btn-outline"&gt;Default button&lt;/div&gt;
+&lt;div class="btn-outline btn-big"&gt;Big button&lt;/div&gt;
+</pre>
+
 
 <!-- Color buttons -->
 <p>You can change the button color by adding a new class to your button with the next style:</p>
 
 <!-- Color buttons code -->
 <pre>
-&lt;!-- For change the color to a normal button --&gt;
+&lt;!-- For change the normal button color --&gt;
 .btn-color { background-color: [color]; }
 
-&lt;!-- For change the color to an outline button --&gt;
+&lt;!-- For change the outline button color --&gt;
 .btn-outline-color { border-color: [color]; color: [color]; }
 .btn-outline-color:hover { background-color: [color]; color: #ffffff; }
 </pre>
@@ -223,21 +225,21 @@ You can change the button size by adding a <code>.btn-small</code> or <code>.btn
 
 <!-- Basic alert -->
 <p>You can create a blue alert adding the <code>.alert</code> class to your div. The default color
-for the alert is <code>blue</code>, but you can change it by adding <code>.alert-[color]</code> class
-to the alert, where <code>[color]</code> can be <code>green</code>, <code>orange</code> or <code>red</code>.</p>
+for the alert is <code>blue</code>, but you can change it by adding <code>.alert-[type]</code> class
+to the alert, where <code>[type]</code> can be <code>done</code>, <code>warning</code> or <code>error</code>.</p>
 
 <!-- Basic alert demo -->
 <div class="alert">This is an alert, <a href="#">and this is a link inside the alert</a>.</div>
-<div class="alert alert-green">This is a <b>green</b> alert.</div>
-<div class="alert alert-orange">This is an <b>orange</b> alert.</div>
-<div class="alert alert-red">This is a <b>red</b> alert.</div>
+<div class="alert alert-done">This is a <b>done</b> alert.</div>
+<div class="alert alert-warning">This is a <b>warning</b> alert.</div>
+<div class="alert alert-error">This is an <b>error</b> alert.</div>
 
 <!-- Basic alert code -->
 <pre>
 &lt;div class="alert"&gt;This is an alert.&lt;/div&gt;
-&lt;div class="alert alert-green"&gt;This is a green alert.&lt;/div&gt;
-&lt;div class="alert alert-orange"&gt;This is an orange alert.&lt;/div&gt;
-&lt;div class="alert alert-red"&gt;This is a red alert.&lt;/div&gt;
+&lt;div class="alert alert-done"&gt;This is a done alert.&lt;/div&gt;
+&lt;div class="alert alert-warning"&gt;This is a warning alert.&lt;/div&gt;
+&lt;div class="alert alert-error"&gt;This is an error alert.&lt;/div&gt;
 </pre>
 
   <div class="docs-space"></div>
