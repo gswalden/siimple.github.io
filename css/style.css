@@ -2,6 +2,11 @@
 .navbar { display: block; width: 100%; min-height: 50px; background-color: #01579B; }
 .navbar { color: #ffffff; line-height: 50px; }
 
+/* Navbar logo */
+.navbar-logo { color: #ffffff; text-decoration: none; font-size: 25px; font-family: Pacifico; }
+.navbar-logo { margin-left: 20px; opacity: 0.8; }
+.navbar-logo:hover { opacity: 1.0; color: #ffffff; text-decoration: none; }
+
 /* Navbar links */
 .navbar-link { color: #ffffff; text-decoration: none; font-weight: 300; margin-right: 20px; }
 .navbar-link { float: right; opacity: 0.8; }
@@ -28,13 +33,8 @@
 
 
 /* Docs Head */
-.docs-head { display: block; width: 100%; padding-top: 15px; padding-bottom: 20px; }
+.docs-head { display: block; width: 100%; padding-top: 30px; padding-bottom: 30px; }
 .docs-head { font-size: 50px; color: #ffffff; background-color: #09a0f6; }
-
-/* Head link */
-.docs-head a { color: #ffffff; text-decoration: none; font-weight: normal; font-size: 50px; font-family: Pacifico; }
-.docs-head a:after { content: " \a0\b7\a0 "; font-family: OpenSans; }
-.docs-head a:hover { text-decoration: none; color: #ffffff; opacity: 0.8; }
 
 /* Docs grid */
 .docs-row { margin-bottom: 20px; }
@@ -48,4 +48,9 @@
 
 /* Foot */
 .foot { display: block; text-align: center; width: 100%; padding-bottom: 50px; }
-.foot { padding-top: 50px; background-color: #f1f5fa; margin-top: 20px; }
+.foot { padding-top: 30px; background-color: #f1f5fa; margin-top: 20px; font-size: 15px; }
+
+/* Foot logo */
+.foot-logo { display: block; width: 250px; color: #536273; font-size: 30px; font-family: Pacifico; }
+.foot-logo { margin-left: auto; margin-right: auto; margin-bottom: 20px; opacity: 0.7; }
+.foot-logo:hover { text-decoration: none; color: #536273; opacity: 1.0; }
