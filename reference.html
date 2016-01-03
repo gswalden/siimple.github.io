@@ -16,7 +16,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<!-- Include Siimple -->
-	<link rel="stylesheet" type="text/css" href="v/1.2.1/siimple.min.css">
+	<link rel="stylesheet" type="text/css" href="latest/siimple.min.css">
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="img/favicon.ico">
@@ -30,6 +30,9 @@
 	<!-- Navbar -->
 	<div class="navbar">
 
+		<!-- Logo -->
+		<a href="./" class="navbar-logo">Siimple</a>
+		
 		<!-- Items -->
 		<a href="./reference" class="navbar-link">Reference</a>
 		<a href="./getting-started" class="navbar-link">Getting started</a>
@@ -41,13 +44,13 @@
 <title>Reference · Siimple</title>
 
 <!-- Head -->
-<div class="docs-head" align="center"><a href="./">Siimple</a>Reference</div>
+<div class="docs-head" align="center">Reference</div>
 
 <!-- Grid main -->
 <div class="grid main">
 
   <!-- Reference title -->
-  <h1>Reference for v1.2.1</h1>
+  <h1>Reference for v1.2.2</h1>
 
   <!-- Description -->
   <p>The reference doc tells you about the components included on the latest version of <b>Siimple</b>,
@@ -55,7 +58,7 @@
   <a href="./getting-started">getting started</a> guide.</p>
 
   <p>Siimple provides a small, light, responsive and clean framework, build in ~250 lines of code. Also,
-  the framwework comes with a ~6KB minimized version.</p>
+  the framework comes with a ~6KB minimized version.</p>
 
   <!-- Typography -->
 <h3>TYPOGRAPHY</h3>
@@ -63,7 +66,7 @@
 <p><b>Siimple</b> uses <a href="https://www.google.com/fonts/specimen/Open+Sans" target="_blank">Open Sans</a>
 as the default font. The default font-size is 16, and the default font-weight is 300.
 <b>Siimple</b> comes with <b>bold tag</b>, <i>italic</i>, <u>underline</u>, <a>liks</a> and <small>small text</small>.
-The default text color is <b>#353f4a</b>, and the emphasis color is <b>#09a0f6</b>.
+The default text color is <b>#526475</b>, and the emphasis color is <b>#09a0f6</b>.
 </p>
 
 <!-- Grid for the heading example -->
@@ -83,12 +86,13 @@ The default text color is <b>#353f4a</b>, and the emphasis color is <b>#09a0f6</
   <div class="col-6">
 
     <!-- Headings description -->
-    <p>Heading comes with a default margin-bottom of 10px, and each tag has his own line-height. Headings
+    <p>Heading comes with a default margin-bottom of 20px, and each tag has his own line-height. Headings
     also uses a 300 font-weight, instead of bold.</p>
-    <p>The <code>H6</code> heading uses the <b>#798ba0</b> color.</p>
+    <p>All the heading tags uses by default <b>#526475</b> color.</p>
 
     <!-- Headings code -->
     <pre>&lt;h1&gt;Heading 1&lt;/h1&gt;<br>&lt;h2&gt;Heading 2&lt;/h2&gt;<br>&lt;h3&gt;Heading 3&lt;/h3&gt;<br>&lt;h4&gt;Heading 4&lt;/h4&gt;<br>&lt;h5&gt;Heading 5&lt;/h5&gt;<br>&lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
+
   </div>
 
 </div>
@@ -147,77 +151,53 @@ You can change the button size by adding a <code>.btn-small</code> or <code>.btn
 <h3>FORMS</h3>
 
 <!-- Input text -->
-<h4>Input text</h4>
-<p>Add a class <code>.form-input</code> to your text-based input fields.</p>
+<p>Add a class <code>.form-input</code> to your text-based <code>input</code> fields (text, password and submit types),
+<code>.form-select</code> to your <code>select</code> fields, and <code>.form-textarea</code> to your
+<code>textarea</code>. By default, the width of all form elements is <b>100%</b>, but you can adjust the width to
+the content by adding the <code>.form-auto</code> class.</p>
 
-<!-- Input text demo -->
-<div class="box">
-  <input type="text" class="form-input" placeholder="Put your text here">
+<!-- Demo -->
+<div class="row">
+
+  <!-- Input -->
+  <div class="col-6"><input type="text" class="form-input" placeholder="Your email"></div>
+
+  <!-- Select  -->
+  <div class="col-6"><select class="form-select"><option>Male</option><option>Female</option></select></div>
+
 </div>
 
-<!-- Input text code -->
-<pre>&lt;input type="text" class="form-input"&gt;</pre>
-
-<!-- Input disabled -->
-<p>Additionally, you can add a <code>disabled</code> attribute to your input text field:</p>
-
-<!-- Input disabled demo -->
-<div class="box">
-  <input type="text" class="form-input" placeholder="Disabled input" disabled>
+<!-- Textarea -->
+<div class="row">
+  <div class="col-12">
+    <textarea class="form-textarea" rows="4" placeholder="Your text"></textarea>
+  </div>
 </div>
 
-<!-- Input disabled code -->
-<pre>&lt;input type="text" class="form-input" disabled&gt;</pre>
-
-
-<!-- Input submit -->
-<h4>Input submit</h4>
-<p>You can add the class <code>.form-input</code> to your submit input fields:</p>
-
-<!-- Input submit demo -->
-<div class="box">
-  <input type="submit" class="form-input" value="Submit form">
-</div>
-
-<!-- Input submit code -->
-<pre>&lt;input type="submit" class="form-input" value="Submit form"&gt;</pre>
-
-
-<!-- Select -->
-<h4>Select</h4>
-<p>Add the class <code>.form-select</code> to your drop-down list tag:</p>
-
-<!-- Select demo -->
-<div class="box">
-  <select class="form-select">
-    <option>Element 1</option>
-    <option>Element 2</option>
-    <option>Element 3</option>
-    <option>Element 4</option>
-  </select>
+<!-- Submit -->
+<div class="row">
+  <div class="col-12">
+    <input type="submit" class="form-input" value="Submit form">
+  </div>
 </div>
 
 <!-- Select code -->
 <pre>
+&lt;!-- Input text --&gt;
+&lt;input type="text" class="form-input" placeholder="Your email"&gt;
+
+&lt;!-- Select --&gt;
 &lt;select class="form-select"&gt;
-  &lt;option&gt;Element 1&lt;/option&gt;
-  &lt;option&gt;Element 2&lt;/option&gt;
-  &lt;option&gt;Element 3&lt;/option&gt;
-  &lt;option&gt;Element 4&lt;/option&gt;
+  &lt;option&gt;Male&lt;/option&gt;
+  &lt;option&gt;Female&lt;/option&gt;
 &lt;/select&gt;
+
+&lt;!-- Textarea --&gt;
+&lt;textarea class="form-textarea"&gt;&lt;/textarea&gt;
+
+&lt;!-- Submit --&gt;
+&lt;input type="submit" class="form-input" value="Submit form"&gt;
 </pre>
-
-<!-- Textarea -->
-<h4>Textarea</h4>
-<p>Simply add the class <code>.form-textarea</code> and modify the attribute <code>rows</code> with the number of rows.</p>
-
-<!-- Textarea demo -->
-<div class="box">
-  <textarea class="form-textarea" rows="4" placeholder="Your text"></textarea>
-</div>
-
-<!-- Textarea code -->
-<pre>&lt;textarea class="form-textarea"&gt;&lt;/textarea&gt;</pre>
 
   <div class="docs-space"></div>
   <!-- Alerts -->
@@ -410,8 +390,14 @@ Add a <code>col-#</code> class to every column, where # is a number from 1 to 12
 
   <!-- Foot -->
   <div class="foot" align="center">
+
+    <!-- Foot logo -->
+    <a href="./" class="foot-logo">Siimple</a>
+
+    <!-- Foot text -->
     Made with <span class="heart"></span> by <a href="http://jm.juanes.xyz/">Josemi Juanes</a>
-    using <a href="https://siimple.github.io/">Siimple</a>.
+    using <a href="./">Siimple</a>.
+
   </div>
 
   <!-- Google Analytics -->
