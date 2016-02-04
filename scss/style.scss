@@ -1,0 +1,165 @@
+//Navbar
+.navbar
+{
+	//Navbar display
+	display: block; width: 100%; min-height: 50px; line-height: 50px;
+
+	//Navbar colors
+	background-color: #01579B; color: #ffffff;
+
+	//Navbar logo
+	&-logo
+	{
+		//Logo style
+		color: #ffffff; text-decoration: none; opacity: 0.8;
+
+		//Logo font
+		font: { size: 25px; family: Pacifico; }
+
+		//Logo mrgin
+		margin: { left: 20px; }
+
+		//Logo hover
+		&:hover { opacity: 1.0; color: #ffffff; text-decoration: none; }
+	}
+
+	//Navbar links
+	&-link
+	{
+		//Links style
+		color: #ffffff; text-decoration: none; font-weight: 300; margin-right: 20px;
+		float: right; opacity: 0.8;
+
+		//Links hover
+		&:hover { opacity: 1.0; color: #ffffff; text-decoration: none; }
+	}
+}
+
+//Cover
+.cover
+{
+	//Cover display
+	display: block;
+
+	//Cover colors
+	background-color: #09a0f6; color: #ffffff;
+
+	//Cover padding
+	padding: { top: 130px; bottom: 190px; }
+
+	//Cover title
+	&-title
+	{
+		//Title display
+		display: block;
+
+		//Title font
+		font: { family: 'Pacifico'; size: 100px; }
+
+		//Title margin
+		margin: { bottom: 20px; }
+	}
+
+	//Cover description
+	&-description { display: block; font-size: 30px; margin-bottom: 10px; }
+
+	//Cover buttons
+	&-btn
+	{
+		//Buttons width
+		width: 150px;
+
+		//Buttons colors
+		border-color: #ffffff; color: #ffffff;
+
+		//Buttons hover
+		&:hover { color: #09a0f6; background-color: #ffffff; }
+	}
+}
+
+//Main
+.main
+{
+	//Margin
+	margin: { top: 40px; bottom: 0px; }
+
+	//Headings
+	@for $i from 1 through 6 { h#{$i} { margin: { top: 40px !important; } } }
+}
+
+//Docs
+.docs
+{
+	//Docs Head
+	&-head
+	{
+		display: block; width: 100%;
+
+		//Head padding
+		padding: { top: 30px; bottom: 30px; }
+
+		//Head font
+		font: { family: 'Pacifico'; size: 60px; }
+
+		//Head color
+		color: #ffffff; background-color: #09a0f6;
+	 }
+
+	//Docs grid row
+	&-row { margin: { bottom: 20px; } }
+
+	//Docs grid col
+	&-col { background-color: #eaf0f2; border-radius: 5px; }
+
+	//Docs space
+	&-space { display: block; height: 40px; }
+
+	//Docs example
+	&-example
+	{
+		//Docs example headings
+		@for $i from 1 through 6 { h#{$i} { margin: { bottom: 10px !important; top: 0px !important; } } }
+	}
+}
+
+//GitHub buttons div
+.gh-btns
+{
+	//Display
+	display: block; width: 100%;
+
+	//Padding
+	padding: { top: 50px; bottom: 30px; }
+
+	//Heading
+	h4 { margin: { bottom: 10px !important; } } 
+}
+
+//Foot
+.foot
+{
+	//Foot style
+	display: block; text-align: center; width: 100%; background-color: #f1f5fa; font-size: 15px;
+
+	//Foot padding
+	padding: { bottom: 50px; top: 30px; }
+
+	//Foot margin
+	margin: { top: 20px; }
+
+	//Foot logo
+	&-logo
+	{
+		//Default font style
+		display: block; width: 250px; color: #536273; opacity: 0.7;
+
+		//Foot logo font
+		font: { size: 30px; family: Pacifico; }
+
+		//Foot logo margin
+		margin: { left: auto; right: auto; bottom: 20px; }
+
+		//Foot logo hover
+		&:hover { text-decoration: none; color: #536273; opacity: 1.0; }
+	}
+}
