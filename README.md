@@ -15,7 +15,6 @@ You can build the docs using **Gulp**:
 ```sh
 gulp build
 ```
- This will generate `index.html`, `getting-started.html` and `reference.html`.
 
 
 ##Contributing
