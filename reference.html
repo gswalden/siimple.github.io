@@ -11,12 +11,10 @@
 	<meta name="keywords" content="jmjuanes, juanes, josemi, siimple, css, ui, flat, clean, websites, minimal">
 
 	<!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="css/opensans.css">
+	<link rel="stylesheet" type="text/css" href="css/font.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Pacifico">
+	<link rel="stylesheet" type="text/css" href="css/siimple.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-
-	<!-- Include Siimple -->
-	<link rel="stylesheet" type="text/css" href="latest/siimple.min.css">
 
 	<!-- Favicon -->
 	<link rel="shortcut icon" href="img/favicon.ico">
@@ -32,7 +30,7 @@
 
 		<!-- Logo -->
 		<a href="./" class="navbar-logo">Siimple</a>
-		
+
 		<!-- Items -->
 		<a href="./reference" class="navbar-link">Reference</a>
 		<a href="./getting-started" class="navbar-link">Getting started</a>
@@ -50,7 +48,7 @@
 <div class="grid main">
 
   <!-- Reference title -->
-  <h1>Reference for v1.2.2</h1>
+  <h1>Reference for v1.3.0</h1>
 
   <!-- Description -->
   <p>The reference doc tells you about the components included on the latest version of <b>Siimple</b>,
@@ -73,7 +71,7 @@ The default text color is <b>#526475</b>, and the emphasis color is <b>#09a0f6</
 <div class="row">
 
   <!-- Colum with the demo -->
-  <div class="col-6">
+  <div class="col-5 docs-example">
     <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -83,12 +81,11 @@ The default text color is <b>#526475</b>, and the emphasis color is <b>#09a0f6</
   </div>
 
   <!-- Columns with the code -->
-  <div class="col-6">
+  <div class="col-7">
 
     <!-- Headings description -->
     <p>Heading comes with a default margin-bottom of 20px, and each tag has his own line-height. Headings
     also uses a 300 font-weight, instead of bold.</p>
-    <p>All the heading tags uses by default <b>#526475</b> color.</p>
 
     <!-- Headings code -->
     <pre>&lt;h1&gt;Heading 1&lt;/h1&gt;<br>&lt;h2&gt;Heading 2&lt;/h2&gt;<br>&lt;h3&gt;Heading 3&lt;/h3&gt;<br>&lt;h4&gt;Heading 4&lt;/h4&gt;<br>&lt;h5&gt;Heading 5&lt;/h5&gt;<br>&lt;h6&gt;Heading 6&lt;/h6&gt;</pre>
@@ -154,7 +151,7 @@ You can change the button size by adding a <code>.btn-small</code> or <code>.btn
 <p>Add a class <code>.form-input</code> to your text-based <code>input</code> fields (text, password and submit types),
 <code>.form-select</code> to your <code>select</code> fields, and <code>.form-textarea</code> to your
 <code>textarea</code>. By default, the width of all form elements is <b>100%</b>, but you can adjust the width to
-the content by adding the <code>.form-auto</code> class.</p>
+the content adding the <code>.form-auto</code> class.</p>
 
 <!-- Demo -->
 <div class="row">
@@ -220,27 +217,6 @@ to the alert, where <code>[type]</code> can be <code>done</code>, <code>warning<
 &lt;div class="alert alert-done"&gt;This is a done alert.&lt;/div&gt;
 &lt;div class="alert alert-warning"&gt;This is a warning alert.&lt;/div&gt;
 &lt;div class="alert alert-error"&gt;This is an error alert.&lt;/div&gt;
-</pre>
-
-  <div class="docs-space"></div>
-  <!-- Panels -->
-<h3>PANELS</h3>
-
-<!-- Default panels -->
-<p>A panel consists in one <code>div</code> with the class <code>.panel</code>, and two <code>div</code> inside,
-the first with the class <code>.panel-head</code> and the second with the class <code>.panel-body</code>.</p>
-
-<!-- Default panels demo -->
-<div class="panel">
-  <div class="panel-head">Panel</div>
-  <div class="panel-body">This is the content of the panel</div>
-</div>
-
-<pre>
-&lt;div class="panel"&gt;
-  &lt;div class="panel-head"&gt;Panel&lt;/div&gt;
-  &lt;div class="panel-body"&gt;Content&lt;/div&gt;
-&lt;/div&gt;
 </pre>
 
   <div class="docs-space"></div>
