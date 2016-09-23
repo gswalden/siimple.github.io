@@ -6,10 +6,10 @@ var gulpFilter = require('gulp-filter');
 var sass = require('gulp-sass');
 
 //Include config
-var Config = require('../siimple/package.json');
+var Config = require('../siimple-siimple/package.json');
 
 //Output dir
-var output = '../siimple-website/';
+var output = '../siimple-website-builded/';
 
 //Files list
 var paths = { 'src': ['src/*.ejs'], 'styles': ['scss/**/*'] };
